@@ -97,7 +97,7 @@ class ViewController: NSViewController {
         for i in 0 ..< 42 {
             
             // Eine neue Karte erzeugen
-            karten.append(MemoryKarten(vorne: bilder[count], bildID: count, position: CGRect(x: (positionen[i] % 6) * 128, y: ((positionen[i] / 6) + 1), width: 128, height: 64), spiel: self))
+            karten.append(MemoryKarten(vorne: bilder[count], bildID: count, position: CGRect(x: (positionen[i] % 6) * 128, y: ((positionen[i] / 6) + 1) * 128, width: 128, height: 128), spiel: self))
             
             // Die Postition der Karte setzen
             karten[i].setBildPos(bildPos: i)
@@ -408,6 +408,13 @@ class ViewController: NSViewController {
         timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(schummel), userInfo: nil, repeats: false)
     }
     
+    @IBAction func resetClicked(_ sender: Any) {
+        for card in karten {
+            card.removeFromSuperview()
+            paar.removeAll()
+            initMeinSpielfeld()
+        }
+    }
     
     @IBAction func closeClicked(_ sender: Any) {
         NSApplication.shared.terminate(self)

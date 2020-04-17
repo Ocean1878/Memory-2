@@ -172,7 +172,7 @@
                                 </connections>
                             </slider>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4lk-6L-qKi">
-                                <rect key="frame" x="443" y="45" width="56" height="23"/>
+                                <rect key="frame" x="443" y="45" width="137" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="qkY-oJ-Uq1">
                                     <font key="font" metaFont="systemBold" size="20"/>
@@ -180,6 +180,17 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-v7-0eA">
+                                <rect key="frame" x="657" y="41" width="97" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="350-90-IH1">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="systemBold"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="resetClicked:" target="XfG-lQ-9wD" id="yEI-a1-BcA"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>

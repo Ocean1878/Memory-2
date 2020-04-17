@@ -10,6 +10,34 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    // MARK: - Outlets
+    
+    @IBOutlet weak var labelPaareMensch: NSTextField!
+    
+    @IBOutlet weak var labelPaareComputer: NSTextField!
+    
+    @IBOutlet weak var labelSpielStaerke: NSTextField!
+    
+    @IBOutlet weak var staerkeSlider: NSSlider!
+    
+    @IBOutlet weak var schummelButton: NSButton!
+    
+    
+    // MARK: - Eigenschaften
+    
+    
+    
+    // MARK: - Methoden
+    
+    
+    
+    // MARK: - Actions
+    
+    
+    @IBAction func closeClicked(_ sender: Any) {
+        NSApplication.shared.terminate(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

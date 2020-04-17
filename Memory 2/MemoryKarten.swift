@@ -92,7 +92,7 @@ class MemoryKarten: NSButton {
     @objc func buttonClicked() {
         
         // Ist die Karte überhaupt noch im Spiel
-        if nochImSpiel == false { // Hier muss ein oder Anweisung ergänzt werden
+        if nochImSpiel == false || spiel.zugErlaubt() == false {
             return
         }
         
@@ -102,7 +102,7 @@ class MemoryKarten: NSButton {
             
             // Die Methode karteOeffnen() im ViewController aufrufen
             // Übergeben wird dabei die Karte - also self
-            
+            spiel.karteOeffnen(karte: self)
         }
     }
     

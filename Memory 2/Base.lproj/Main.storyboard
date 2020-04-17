@@ -159,11 +159,17 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="systemBold"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="schummelClicked:" target="XfG-lQ-9wD" id="nEm-W6-hzw"/>
+                                </connections>
                             </button>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHO-qt-ESa">
                                 <rect key="frame" x="330" y="44" width="109" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" state="on" userInterfaceLayoutDirection="rightToLeft" alignment="left" maxValue="10" doubleValue="5" tickMarkPosition="above" numberOfTickMarks="5" allowsTickMarkValuesOnly="YES" sliderType="linear" id="GrU-Mw-iLE"/>
+                                <connections>
+                                    <action selector="spielStaerke:" target="XfG-lQ-9wD" id="Kbb-NS-bJM"/>
+                                </connections>
                             </slider>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4lk-6L-qKi">
                                 <rect key="frame" x="443" y="45" width="56" height="23"/>
